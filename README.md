@@ -5,6 +5,7 @@ Basic PHP URL Shortener
 
 # How to use
 To open short links, use the url with the "s" parameter with the "code" coresponding to it. For example, https://localhost/index.php?s=hud871893697
+
 To make short links, use the url with the "l" parameter with the link you want. The page will then show a the shorted link. For example, https://localhost/index.php?l=https://example.com
 
 # Installation
