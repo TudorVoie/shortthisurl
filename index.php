@@ -9,7 +9,9 @@
     	$shorted = uniqid();
     	$time = time();
     	$db->exec("INSERT INTO short VALUES('" . $shorted . "','" . $_GET['l'] . "'," . $time .")");
-    	echo $domain . $shorted;
+    	//echo $domain . $shorted;
+    	echo "<p id='result'>" . $domain . $shorted . "</p><br><button onclick='mycopy()'>Copy to clipboard</button><script>function mycopy() {var copyText = document.getElementById('result').innerHTML;navigator.clipboard.writeText(copyText)}</script>";
+    	
 	} else {
     	if (isset($_GET['s'])) {
 			$stmt = $db->query("SELECT long FROM short WHERE shorted IS  '" . $_GET['s'] . "'" );
@@ -21,5 +23,5 @@
     		echo "No parameter given => No result";
 		}
 	}
-	echo "<br> ================================= <br> ShortThisURL v.0.2. <a href='https://github.com/TudorVoie/shortthisurl'>GitHub</a>";	
+	echo "<br> ================================= <br> ShortThisURL v.0.3. <a href='https://github.com/TudorVoie/shortthisurl'>GitHub</a>";	
 ?>
