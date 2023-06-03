@@ -20,5 +20,6 @@
 		} else {
     		echo "No parameter given => No result";
 		}
-	}	
+	}
+	echo "<br> ================================= <br> ShortThisURL v.0.2. <a href='https://github.com/TudorVoie/shortthisurl'>GitHub</a>";	
 ?>
