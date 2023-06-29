@@ -1,5 +1,3 @@
-Improvements incoming, right now this is a very bare-bones version.
-
 # Short This URL
 Basic PHP URL Shortener
 
